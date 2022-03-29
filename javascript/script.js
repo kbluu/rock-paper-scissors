@@ -2,7 +2,10 @@ const selection = ["rock", "paper", "scissors"];
 let computerScore = 0;
 let playerScore = 0;
 
-function computerPlay() {}
+function computerPlay() {
+  const randomIndex = getRandomIndex(selection);
+  return selection[randomIndex];
+}
 
 function playRound(playerSelection, computerSelection) {}
 
