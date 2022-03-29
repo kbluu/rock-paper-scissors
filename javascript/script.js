@@ -18,8 +18,10 @@ function playRound(playerSelection, computerSelection) {
     (playerSelection === `paper` && computerSelection === `rock`) ||
     (playerSelection === `scissors` && computerSelection === `paper`)
   ) {
+    playerScore++;
     return `Player Selects: ${playerSelection}\nComputer Selects: ${computerSelection}\nPlayer Wins! Computer Lose.`;
   } else {
+    computerScore++;
     return `Player Selects: ${playerSelection}\nComputer Selects: ${computerSelection}\nComputer Wins! Player Lose.`;
   }
 }
@@ -33,6 +35,20 @@ function game() {
     let computerSelection = computerPlay();
     console.log(`Round: ${i}`);
     console.log(playRound(playerSelection, computerSelection));
+  }
+
+  if (playerScore === computerScore) {
+    console.log(
+      `Player Score: ${playerScore}\nComputer Score: ${computerScore}\nIt' a Tie Game!`
+    );
+  } else if (playerScore > computerScore) {
+    console.log(
+      `Player Score: ${playerScore}\nComputer Score: ${computerScore}\nPlayer Wins The Game!`
+    );
+  } else {
+    console.log(
+      `Player Score: ${playerScore}\nComputer Score: ${computerScore}\nComputer Wins The Game!`
+    );
   }
 }
 
