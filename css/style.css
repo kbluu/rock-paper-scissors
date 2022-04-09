@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&family=Rubik:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.selection-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.selection-section button {
+  border: 2px solid transparent;
+  background-color: black;
+  color: white;
+  padding: 38px;
+  border-radius: 24px;
+  transition: all 0.3s;
+}
+
+.selection-section button:hover {
+  background-color: #ffffff;
+  color: black;
+  border: 2px solid black;
+}
+
+i {
+  font-size: 81px;
+}
+
+p {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 24px;
+}
