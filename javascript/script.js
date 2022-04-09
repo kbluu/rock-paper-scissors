@@ -19,10 +19,10 @@ function playRound(playerSelection, computerSelection) {
     (playerSelection === `scissors` && computerSelection === `paper`)
   ) {
     playerScore++;
-    return `player selects: ${playerSelection} || computer selects: ${computerSelection} || player wins! computer lose.`;
+    return `player selects: ${playerSelection} || computer selects: ${computerSelection} || player wins!`;
   } else {
     computerScore++;
-    return `player selects: ${playerSelection} || computer selects: ${computerSelection} || computer wins! player lose.`;
+    return `player selects: ${playerSelection} || computer selects: ${computerSelection} || computer wins!`;
   }
 }
 
